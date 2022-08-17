@@ -1,6 +1,6 @@
 const NotFound = () => {
     return ( 
-        <div>page not found</div>
+        <div>404- page not found</div>
      );
 }
  
