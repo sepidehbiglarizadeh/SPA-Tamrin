@@ -1,10 +1,9 @@
-import withRouter from "../../HOC/withRouter";
 
 const Blog = (props) => {
-    const id= props.router.params.id;
+    const id= props.match.params.id;
     return ( 
-        <div>Blog detail - {id}</div>
+        <div>Blog detail - {id} </div>
      );
 }
  
-export default withRouter(Blog);
+export default Blog;
