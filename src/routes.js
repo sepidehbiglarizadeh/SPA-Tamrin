@@ -8,10 +8,10 @@ import ProfilePage from "./components/pages/ProfilePage";
 
 const routes = [
   { path: "/blogs/:id", component: Blog },
-  { path: "/post/:id?", component: PostPage},
   { path: "/blogs", component: BlogsPage },
   { path: "/about-us", component: AboutUsPage },
   { path: "/profile", component: ProfilePage },
+  { path: "/post/:id([0-9]+)?", component: PostPage},
   { path: "/", component: HomePage, exact: true },
   { path: "*", component: NotFound },
 ];

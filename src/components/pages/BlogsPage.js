@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import queryString from "query-string";
 
 const items = [
   { name: "blog-1", to: "/blogs/1" },
@@ -13,7 +14,7 @@ const BlogsPage = () => {
       {items.map((item) => {
         return (
           <li key={item.to}>
-            <Link to={item.to}>{item.name}</Link>
+            <Link to={{pathname:item.to,search:"sort=name"}}>{item.name}</Link>
           </li>
         );
       })}
