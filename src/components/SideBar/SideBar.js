@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const SideBar = () => {
   return (
     <ul className="sideBar">
       <li>
-        <Link to={"/profile/dashboard"}>Dashboard</Link>
+        <NavLink to={"/profile/dashboard"} activeClassName="activeClass">Dashboard</NavLink>
       </li>
       <li>
-        <Link to={"/profile/downloads"}>Downloads</Link>
+        <NavLink to={"/profile/downloads"} activeClassName="activeClass">Downloads</NavLink>
       </li>
     </ul>
   );

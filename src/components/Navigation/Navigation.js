@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { withRouter } from "react-router";
 
 
@@ -17,9 +17,9 @@ const Navigation = (props) => {
       {items.map((item) => {
         return (
           <li key={item.to}>
-            <Link to={item.to}>
+            <NavLink to={item.to} activeClassName="activeClass">
               {item.name}
-            </Link>
+            </NavLink>
           </li>
         );
       })}

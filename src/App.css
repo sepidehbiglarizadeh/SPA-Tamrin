@@ -10,7 +10,7 @@ nav{
 }
 
 .header{
-    background-color: rgb(187, 169, 255);
+    background-color: #dbeafe;
     padding: 2rem;
 }
 
@@ -18,7 +18,7 @@ nav{
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: bisque;
+    background-color: #dbeafe;
     height: 100px;
     padding: 2rem;
 }
@@ -32,6 +32,7 @@ nav{
 
 .sideBar {
     display: flex;
+    background-color: #dbeafe;
 }
 
 .aside h2{
@@ -39,10 +40,12 @@ nav{
 }
 
 .aside{
-    background-color: aqua;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;    
 }
 
+.activeClass{
+    color: blue;
+}
