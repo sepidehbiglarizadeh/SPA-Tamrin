@@ -1,8 +1,7 @@
 import Navigation from "../Navigation/Navigation";
 
 const Header = () => {
-    return ( <div><Navigation/>
-    <p>Header</p>
+    return ( <div className="header"><Navigation/>
     </div> );
 }
  
