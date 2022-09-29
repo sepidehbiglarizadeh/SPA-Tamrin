@@ -11,7 +11,6 @@ const items = [
 ];
 
 const Navigation = () => {
-  const params= useParams();
 
   return (
     <nav>

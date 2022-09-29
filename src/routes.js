@@ -12,7 +12,7 @@ const routes = [
   { path: "/blogs", element: <BlogsPage/> },
   { path: "/about-us", element: <AboutUsPage/> },
   { path: "/profile/*", element: <ProfilePage/> },
-  { path: "/post/:id([0-9]+)?", element: <PostPage/>},
+  { path: "/post", element: <PostPage/>},
   { path: "/", element: <HomePage/> },
   { path: "*", element: <NotFound/> },
 ];

@@ -1,8 +1,9 @@
-const PostPage = (props) => {
-  const id = props.match.params.id || 1;
+import { useParams } from "react-router-dom";
+
+const PostPage = () => {
   return (
     <div>
-      <p>This is post page : {id}</p>
+      <p>This is post page </p>
     </div>
   );
 };
