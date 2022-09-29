@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import { withRouter } from "react-router";
 
 
 const items = [
@@ -27,4 +26,4 @@ const Navigation = (props) => {
   );
 };
 
-export default withRouter(Navigation);
+export default Navigation;
