@@ -1,3 +1,4 @@
+import { Navigate } from "react-router-dom";
 import Blog from "./components/Blog/Blog";
 import AboutUsPage from "./components/pages/AboutusPage";
 import BlogsPage from "./components/pages/BlogsPage";
@@ -12,7 +13,7 @@ const routes = [
   { path: "/about-us", element: <AboutUsPage/> },
   { path: "/profile", element: <ProfilePage/> },
   { path: "/post/:id([0-9]+)?", element: <PostPage/>},
-  { path: "/", element: <HomePage/> },
+  { path: "/", element: <Navigate replace to="/blogs"/> },
   { path: "*", element: <NotFound/> },
 ];
 
