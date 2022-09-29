@@ -1,5 +1,5 @@
 import SideBar from "../SideBar/SideBar";
-import { Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Dashboard from "../Dashboard/Dashboard";
 import Download from "../Download/Download";
 
@@ -11,8 +11,10 @@ const ProfilePage = () => {
         <SideBar />
       </div>
       <div className="content">
-        <Route path="/profile/dashboard" component={Dashboard} />
-        <Route path="/profile/downloads" component={Download} />
+        <Routes>
+          <Route path="/dashboard" element={<Dashboard/>} />
+          <Route path="/downloads" element={<Download/>} />
+        </Routes>
       </div>
     </aside>
   );

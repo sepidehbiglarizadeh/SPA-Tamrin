@@ -11,9 +11,9 @@ const routes = [
   { path: "/blogs/:id", element: <Blog/> },
   { path: "/blogs", element: <BlogsPage/> },
   { path: "/about-us", element: <AboutUsPage/> },
-  { path: "/profile", element: <ProfilePage/> },
+  { path: "/profile/*", element: <ProfilePage/> },
   { path: "/post/:id([0-9]+)?", element: <PostPage/>},
-  { path: "/", element: <Navigate replace to="/blogs"/> },
+  { path: "/", element: <HomePage/> },
   { path: "*", element: <NotFound/> },
 ];
 

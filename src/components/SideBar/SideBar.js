@@ -4,10 +4,10 @@ const SideBar = () => {
   return (
     <ul className="sideBar">
       <li>
-        <NavLink to={"/profile/dashboard"} activeClassName="activeClass">Dashboard</NavLink>
+        <NavLink to={"/profile/dashboard"} className={(navData)=> navData.isActive ? "activeClass" : ""}>Dashboard</NavLink>
       </li>
       <li>
-        <NavLink to={"/profile/downloads"} activeClassName="activeClass">Downloads</NavLink>
+        <NavLink to={"/profile/downloads"} className={(navData)=> navData.isActive ? "activeClass" : ""}>Downloads</NavLink>
       </li>
     </ul>
   );
