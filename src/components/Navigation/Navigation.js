@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 
 
 const items = [
@@ -10,13 +10,15 @@ const items = [
 
 ];
 
-const Navigation = (props) => {
+const Navigation = () => {
+  const params= useParams();
+
   return (
     <nav>
       {items.map((item) => {
         return (
           <li key={item.to}>
-            <NavLink to={item.to} activeClassName="activeClass">
+            <NavLink to={item.to} className={(navData)=> navData.isActive ? "activeClass" : ""}>
               {item.name}
             </NavLink>
           </li>
